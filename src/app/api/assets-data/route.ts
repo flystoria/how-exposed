@@ -196,12 +196,4 @@ function fetchData() {
 }
 
 // Refresh data every 30 minutes
-const interval = setInterval(fetchData, 30 * 60 * 1000);
-
-// Cleanup function
-function cleanup() {
-  clearInterval(interval);
-}
-
-// Export the cleanup function
-export { cleanup }; 
+const interval = setInterval(fetchData, 30 * 60 * 1000); 
